@@ -34,7 +34,7 @@ export default function VideoLayout({
           </div>
         </div>
         <div className="lg:col-span-1">
-          <RelatedVideos videos={relatedVideos} />
+          <RelatedVideos videos={relatedVideos} currentVideoId={params.id} />
         </div>
       </div>
     </div>
