@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ted-blue-50: #f0f7ff;
+  --ted-blue-100: #e0effe;
+  --ted-blue-200: #bae0fd;
+  --ted-blue-300: #7cc5fb;
+  --ted-blue-400: #36a7f7;
+  --ted-blue-500: #0c87ee;
+  --ted-blue-600: #006bd1;
+  --ted-blue-700: #0055a4;
+  --ted-blue-800: #004887;
+  --ted-blue-900: #003d70;
+}
+
+@layer base {
+  body {
+    @apply text-gray-800 bg-gray-50;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-block px-6 py-3 rounded-md font-medium transition-colors;
+  }
+
+  .btn-primary {
+    @apply bg-ted-blue-500 text-white hover:bg-ted-blue-600;
+  }
+
+  .btn-secondary {
+    @apply bg-white text-ted-blue-500 hover:bg-gray-100;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden;
+  }
+}
